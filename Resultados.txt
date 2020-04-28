@@ -1,0 +1,113 @@
+teste_treino_MLP2
+01_retinex.png
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'relu', solver = 'sgd', random_state=21)
+
+accuracy = 72%
+confusion matrix =[[339 175]
+ 		   [126 449]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'relu', solver = 'lbfgs', random_state=21)
+
+accuracy = 73%
+confusion matrix =[[357 157]
+ 		   [134 441]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'relu', solver = 'adam', random_state=21)
+
+accuracy = 72%
+confusion matrix =[[345 169]
+ 		   [127 448]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'identity', solver = 'sgd', random_state=21)
+
+accuracy = 73%
+confusion matrix =[[360 154]
+ 		   [137 438]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'identity', solver = 'lbfgs', random_state=21)
+
+accuracy = 73%
+confusion matrix =[[359 155]
+ 		   [136 439]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'identity', solver = 'adam', random_state=21)
+
+accuracy = 73%
+confusion matrix =[[363 151]
+ 		   [138 437]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'logistic', solver = 'sgd', random_state=21)
+
+accuracy = 52%
+confusion matrix =[[  0 514]
+ 		   [  0 575]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'logistic', solver = 'lbfgs', random_state=21)
+
+accuracy = 72%
+confusion matrix =[[339 175]
+ 		   [125 450]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'logistic', solver = 'adam', random_state=21)
+
+accuracy = 73%
+confusion matrix =[[360 154]
+ 		   [138 437]]
+
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'tanh', solver = 'sgd', random_state=21)
+
+accuracy = 72%
+confusion matrix =[[339 175]
+ 		   [126 449]]
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'tanh', solver = 'lbfgs', random_state=21)
+
+accuracy = 72%
+confusion matrix =[[338 176]
+ 		   [124 451]]
+
+
+---------------------------------
+
+x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.20, random_state=21)
+clf = MLPClassifier( hidden_layer_sizes = ( 100, 100, 100), max_iter=500, activation = 'tanh', solver = 'adam', random_state=21)
+
+accuracy = 72%
+confusion matrix =[[343 171]
+ 		   [127 448]]
+
+
